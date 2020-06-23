@@ -8,13 +8,23 @@ const Cards = (props) => {
 					<img
 						alt={props.payload.fields.header.stringValue}
 						src={props.payload.fields.image.stringValue}
+						style={{ height: 160 }}
 					/>
-					<span className="card-title">
-						{props.payload.fields.header.stringValue}
-					</span>
 				</div>
-				<div className="card-content">
-					{props.payload.fields.description.stringValue}
+				<div className="card-content" style={{ height: 235 }}>
+					<h4
+						className="card-title"
+						style={{
+							fontSize: 18,
+							color: "black",
+							margin: 0,
+							marginBottom: 20,
+							fontWeight: "bold",
+						}}
+					>
+						{props.payload.fields.header.stringValue}
+					</h4>
+					<p>{props.payload.fields.description.stringValue}</p>
 					<p>
 						<a href="\">{props.payload.fields.price.stringValue}</a>
 					</p>
@@ -25,7 +35,7 @@ const Cards = (props) => {
 						rel="noopener noreferrer"
 						href={props.payload.fields.link.stringValue}
 					>
-						GET NOW
+						Goto Website
 					</a>
 				</div>
 			</div>

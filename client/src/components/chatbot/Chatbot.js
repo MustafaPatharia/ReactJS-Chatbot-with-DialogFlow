@@ -223,7 +223,7 @@ class Chatbot extends Component {
 					<div
 						id="chatbot"
 						style={{
-							height: "100%",
+							height: "98%",
 							width: "100%",
 							overflow: "auto",
 						}}
@@ -245,6 +245,7 @@ class Chatbot extends Component {
 							paddingLeft: 10,
 							borderColor: "#427FE1",
 							borderRadius: 10,
+							marginTop: 12,
 						}}
 					>
 						<Row align="center">
