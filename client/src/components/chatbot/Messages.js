@@ -11,6 +11,7 @@ import {
 const Messages = (props) => {
 	return (
 		// <div className="col s12 m8 offset-m2 offset-l3">
+		//This is the new code
 		<ThemeProvider>
 			<MessageGroup>
 				{props.speaks === "Bot" && (
